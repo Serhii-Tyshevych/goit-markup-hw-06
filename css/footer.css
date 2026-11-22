@@ -1,0 +1,128 @@
+.footer {
+  padding: 100px 0;
+  background-color: #2e2f42;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-wrapper {
+  padding: 0;
+}
+
+.footer-text {
+  max-width: 264px;
+  margin-top: 16px;
+  color: #f4f4fd;
+}
+
+.logo.logo-footer {
+  color: #f4f4fd;
+}
+
+.footer-socials {
+  margin-left: 120px;
+}
+
+.footer-media {
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.footer-socials .socials-list {
+  justify-content: flex-start;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .socials-link:hover,
+.footer .socials-link:focus {
+  background-color: #31d0aa;
+}
+
+/* Modal footer */
+.modal-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.footer-modal-title {
+  font-weight: 500;
+  color: #fff;
+}
+
+.footer-modal-form {
+  display: flex;
+  align-items: center;
+}
+
+.footer-form-input {
+  padding: 8px 16px;
+  width: 264px;
+  height: 40px;
+
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background-color: transparent;
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-input:focus,
+.footer-form-input:focus-visible {
+  border-color: #31d0aa;
+  outline: none;
+}
+
+.footer-form-input::placeholder {
+  color: #fff;
+ }
+
+.modal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-left: 24px;
+
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  color: #fff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #31d0aa;
+}
+
+.footer-modal-form-icon {
+  flex-shrink: 0;
+}
