@@ -145,7 +145,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 72px 24px;
-    max-width: 768px;
+    max-width: 584px;
   }
   .footer-text {
     max-width: 264px;
