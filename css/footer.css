@@ -9,7 +9,6 @@
   flex-direction: column;
   align-items: center;
   gap: 72px;
-  padding: 0 16px;
 }
 
 .footer-wrapper {
@@ -138,7 +137,7 @@
 
 /* Планшетні стилі */
 @media screen and (min-width: 768px) {
-  .footer-socials .socials-list {
+  .footer-socials .socials-list { 
     justify-content: flex-start;
   }
   .footer .footer-container {
@@ -146,7 +145,8 @@
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 72px 24px;
-     }
+    max-width: 768px;
+  }
   .footer-text {
     max-width: 264px;
   }
@@ -175,7 +175,8 @@
   .footer .footer-container {
     flex-wrap: nowrap;
     gap: 0;
-     }
+    max-width: 1158px;
+  }
   .footer-socials {
     margin-left: 120px;
   }
