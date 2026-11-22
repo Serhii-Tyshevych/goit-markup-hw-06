@@ -75,6 +75,9 @@
 }
 /* Планшетні стилі */
 @media screen and (min-width: 768px) {
+  .portfolio-list {
+    gap: 72px 24px;
+  }
   .portfolio-item {
     width: calc((100% - 24px) / 2);
   }
@@ -86,6 +89,9 @@
 
 /* Десктопні стилі */
 @media screen and (min-width: 1158px) {
+  .portfolio-list {
+    gap: 48px 24px;
+  }
   .portfolio-wrapper {
     padding: 120px 0;
   }

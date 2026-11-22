@@ -25,12 +25,7 @@
   margin: 0 auto;
   background-color: #2e2f42;
 
-  /* Рамка контейнера додає по 1px зверху й знизу. */
-  padding: 71px 0;
-}
-
-.hero .container {
-  padding: 0 15px;
+  padding: 72px 0;
 }
 
 .hero-title {
@@ -71,7 +66,7 @@
 /* Планшетні стилі */
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 111px 0;
+    padding: 112px 0;
   }
   .hero-title {
     max-width: 496px;
@@ -84,10 +79,7 @@
 /* Десктопні стилі */
 @media screen and (min-width: 1158px) {
   .hero {
-    padding: 187px 0;
-  }
-  .hero .container {
-    padding: 0 14px;
+    padding: 188px 0;
   }
   .hero-title {
     padding-bottom: 48px;

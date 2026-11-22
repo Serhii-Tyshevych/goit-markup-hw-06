@@ -1,4 +1,8 @@
 /* Мобільні стилі */
+.features {
+  padding: 96px 0;
+}
+
 .features-list {
   display: flex;
   flex-wrap: wrap;
@@ -15,21 +19,40 @@
 
 .features-subtitle {
   margin-bottom: 8px;
-  margin-top: 96px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
   color: #2e2f42;
+}
+
+.features-text {
+  font-weight: 500;
 }
 
 /* Планшетні стилі */
 @media screen and (min-width: 768px) {
+  .features-subtitle {
+    text-align: left;
+  }
   .features-item {
     width: calc((100% - 24px) / 2);
   }
 }
 /* Десктопні стилі */
 @media screen and (min-width: 1158px) {
+  .features {
+    padding: 120px 0;
+  }
+  .features-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .features-text {
+    font-weight: 400;
+  }
   .features-item {
     width: calc((100% - 72px) / 4);
   }
@@ -37,7 +60,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 96px;
     margin-bottom: 8px;
     border: 1px solid #8e8f99;
     border-radius: 4px;

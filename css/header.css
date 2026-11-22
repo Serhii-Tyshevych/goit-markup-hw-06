@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   min-height: 56px;
-  padding: 15px;
+  padding: 0 16px;
 }
 
 .logo-header {
@@ -12,6 +12,7 @@
 
 .header .logo {
   display: block;
+  padding: 16px 0;
 }
 
 .header-nav,
@@ -32,7 +33,10 @@
 @media screen and (min-width: 768px) {
   .header .container {
     min-height: 72px;
-    padding: 0 15px;
+    padding: 0 16px;
+  }
+  .header .logo {
+    padding: 24px 0;
   }
   .header-nav {
     display: block;
@@ -47,7 +51,7 @@
   .header-link {
     position: relative;
     display: block;
-    padding: 23px 0;
+    padding: 24px 0;
     font-weight: 500;
     color: #2e2f42;
 
@@ -87,7 +91,7 @@
 /* Десктопні стилі */
 @media screen and (min-width: 1158px) {
   .header .container {
-    padding: 0 14px;
+    padding: 0 15px;
   }
   .header-nav {
     margin-left: 76px;
