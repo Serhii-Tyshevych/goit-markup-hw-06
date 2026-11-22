@@ -1,3 +1,4 @@
+/* Мобільні стилі */
 .hero {
   background-image:
     linear-gradient(
@@ -14,18 +15,22 @@
   margin: 0 auto;
   background-color: #2e2f42;
 
-  padding: 188px 0;
+  /* Рамка контейнера додає по 1px зверху й знизу. */
+  padding: 71px 0;
+}
+
+.hero .container {
+  padding: 0 15px;
 }
 
 .hero-title {
-  max-width: 496px;
+  max-width: 210px;
   text-align: center;
-  padding-bottom: 48px;
+  padding-bottom: 72px;
   margin: auto;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-
+  font-size: 36px;
+  line-height: 1.111112;
   color: #fff;
 }
 .btn {
@@ -33,16 +38,48 @@
   margin: auto;
 }
 .btn-hero {
+  width: 169px;
+  height: 56px;
   border-radius: 4px;
-  padding: 16px 32px;
   border: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   color: #fff;
-  
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-hero:hover,
 .btn-hero:focus {
   background-color: #404bbf;
+}
+
+/* Планшетні стилі */
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 111px 0;
+  }
+  .hero-title {
+    max-width: 496px;
+    padding-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.071429;
+  }
+}
+
+/* Десктопні стилі */
+@media screen and (min-width: 1158px) {
+  .hero {
+    padding: 187px 0;
+  }
+  .hero .container {
+    padding: 0 14px;
+  }
+  .hero-title {
+    padding-bottom: 48px;
+  }
 }

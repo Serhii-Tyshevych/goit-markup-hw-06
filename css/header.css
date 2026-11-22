@@ -1,70 +1,104 @@
-.header {
-}
+/* Мобільні стилі */
 .header .container {
   display: flex;
   align-items: center;
+  min-height: 56px;
+  padding: 15px;
 }
 
 .logo-header {
-  padding: 24px 0;
-}
-.header-nav {
-  margin-left: 76px;
-  margin-right: auto;
-}
-.header-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  flex-shrink: 0;
 }
 
-.contacts {
+.header .logo {
+  display: block;
 }
-.contacts-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
+
+.header-nav,
+.header .contacts {
+  display: none;
 }
-.contacts-item {
-}
-.contacts-link {
-  padding: 24px 0;
+
+.header .contacts-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-link:hover,
-.contacts-link:focus {
+
+.header .contacts-link:hover,
+.header .contacts-link:focus {
   color: #404bbf;
 }
 
-.header-item {
+/* Планшетні стилі */
+@media screen and (min-width: 768px) {
+  .header .container {
+    min-height: 72px;
+    padding: 0 15px;
+  }
+  .header-nav {
+    display: block;
+    margin-left: 120px;
+    margin-right: auto;
+  }
+  .header-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .header-link {
+    position: relative;
+    display: block;
+    padding: 23px 0;
+    font-weight: 500;
+    color: #2e2f42;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-link.current,
+  .header-link:hover,
+  .header-link:focus {
+    color: #404bbf;
+  }
+  .header-link.current::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+    content: "";
+  }
+  .header .contacts {
+    display: block;
+  }
+  .header .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .header .contacts-link {
+    display: block;
+    font-size: 12px;
+    line-height: 1.166667;
+    letter-spacing: 0.04em;
+  }
 }
 
-.header-link {
-  font-weight: 500;
-  color: #2e2f42;
-  padding: 24px 0;
-
-  position: relative;
-  display: block;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
-}
-
-.header-link:hover,
-.header-link:focus,
-.header-link.current {
-  color: #404bbf;
-}
-
-.header-link.current::after {
-  content: '';
-  position: absolute;
-  display: block;
-
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  border-radius: 2px;
-  height: 4px;
-  background-color: #404bbf;
+/* Десктопні стилі */
+@media screen and (min-width: 1158px) {
+  .header .container {
+    padding: 0 14px;
+  }
+  .header-nav {
+    margin-left: 76px;
+  }
+  .header .contacts-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .header .contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
 }

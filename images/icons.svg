@@ -122,6 +122,9 @@
                 d="M24 0L0 11.25L7.66994 13.6172L19.5 4.375L10.5017 14.4913L10.509 14.4936L10.5 14.4913V20L14.8013 15.8183L20.2501 17.5L24 0Z"
                 fill="currentColor" />
         </symbol>
-
+        <symbol id="burger-menu" viewBox="0 0 28 28" fill="none">
+            <path stroke-width="2" stroke="currentColor" stroke-linecap="round"
+                d="M3.5 14h21M3.5 7h21M3.5 21h21" />
+        </symbol>
     </defs>
 </svg>

@@ -1,9 +1,11 @@
+/* Мобільні стилі */
 .team {
   background-color: #f4f4fd;
 }
 .team-wrapper {
-  padding: 120px 0;
-}
+  padding: 96px 0;
+
+}   
 .team-title {
   padding-bottom: 72px;
   font-weight: 700;
@@ -15,10 +17,10 @@
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 72px 24px;
+  padding-left: 12px;
 }
 .team-item {
-  width: calc((100% - 24px * 3) / 4);
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -30,6 +32,10 @@
   padding: 32px 16px;
 }
 
+.team-pic {
+  width: 100%;
+  height: auto;
+}
 .team-name {
   margin-bottom: 8px;
   font-weight: 500;
@@ -44,11 +50,34 @@
   text-align: center;
 }
 
-.team .socials-list {
-  padding: 0;
-}
-
 .team .socials-link:hover,
 .team .socials-link:focus {
   background-color: #404bbf;
 }
+
+.team .socials-list {
+  padding: 0;
+}
+
+/* Планшетні стилі */
+@media screen and (min-width: 768px) {
+  .team-list {
+    gap: 64px 24px;
+  }
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+/* Десктопні стилі */
+@media screen and (min-width: 1158px) {
+  .team-wrapper {
+    padding: 120px 0;
+  }
+  .team-item {
+    width: calc((100% - 72px) / 4);
+  }
+}
+
+/* Мобільні стилі */
+/* Планшетні стилі */
+/* Десктопні стилі */

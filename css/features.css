@@ -1,34 +1,47 @@
-.features {
-}
-.features-title {
-}
+/* Мобільні стилі */
 .features-list {
   display: flex;
-  padding: 120px 0;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px 24px;
 }
-.features-item {
-}
-.features-wrapper {
-   display: flex;
-  justify-content: center;
-  align-items: center;
 
-  margin-bottom: 8px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  background: #f4f4fd;
-  height: 112px;
+.features-item {
+  width: 100%;
 }
-.features-icon {
-  margin: 0;
+
+.features-wrapper {
+  display: none;
 }
+
 .features-subtitle {
   margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  margin-top: 96px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   color: #2e2f42;
 }
-.features-text {
+
+/* Планшетні стилі */
+@media screen and (min-width: 768px) {
+  .features-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+/* Десктопні стилі */
+@media screen and (min-width: 1158px) {
+  .features-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .features-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 96px;
+    margin-bottom: 8px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background: #f4f4fd;
+    height: 112px;
+  }
 }

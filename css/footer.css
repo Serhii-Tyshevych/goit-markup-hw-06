@@ -1,12 +1,16 @@
+/* Мобільні стилі */
 .footer {
-  padding: 100px 0;
+  /* Компенсація верхньої та нижньої рамок контейнера. */
+  padding: 95px 0;
   background-color: #2e2f42;
 }
 
-.footer-container {
+.footer .footer-container {
   display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+  padding: 0 15px;
 }
 
 .footer-wrapper {
@@ -14,17 +18,19 @@
 }
 
 .footer-text {
-  max-width: 264px;
+  max-width: 288px;
   margin-top: 16px;
   color: #f4f4fd;
 }
 
 .logo.logo-footer {
+  display: block;
+  text-align: center;
   color: #f4f4fd;
 }
 
 .footer-socials {
-  margin-left: 120px;
+  text-align: center;
 }
 
 .footer-media {
@@ -50,22 +56,25 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-left: auto;
+  width: 100%;
 }
 
 .footer-modal-title {
+  text-align: center;
   font-weight: 500;
   color: #fff;
 }
 
 .footer-modal-form {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 16px;
 }
 
 .footer-form-input {
   padding: 8px 16px;
-  width: 264px;
+  width: 100%;
   height: 40px;
 
   border-radius: 4px;
@@ -90,16 +99,17 @@
 
 .footer-form-input::placeholder {
   color: #fff;
- }
+}
 
 .modal-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-left: 24px;
+  flex-shrink: 0;
 
   min-width: 165px;
+  width: 165px;
   height: 40px;
   padding: 8px 24px;
   border: none;
@@ -125,4 +135,51 @@
 
 .footer-modal-form-icon {
   flex-shrink: 0;
+}
+
+/* Планшетні стилі */
+@media screen and (min-width: 768px) {
+  .footer .footer-container {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    padding: 0 107px;
+  }
+  .footer-text {
+    max-width: 264px;
+  }
+  .logo.logo-footer,
+  .footer-socials,
+  .footer-modal-title {
+    text-align: left;
+  }
+  .modal-footer {
+    width: 453px;
+  }
+  .footer-modal-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .footer-form-input {
+    width: 264px;
+  }
+}
+
+/* Десктопні стилі */
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding: 99px 0;
+  }
+  .footer .footer-container {
+    flex-wrap: nowrap;
+    gap: 0;
+    padding: 0 14px;
+  }
+  .footer-socials {
+    margin-left: 120px;
+  }
+  .modal-footer {
+    margin-left: auto;
+  }
 }
