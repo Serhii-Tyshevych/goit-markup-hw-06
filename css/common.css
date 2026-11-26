@@ -117,14 +117,10 @@ img {
   background: #2e2f42;
 }
 
-
 /* Планшетні стилі */
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 16px;
-    margin: 0 auto;
-  
   }
 }
 
@@ -133,8 +129,5 @@ img {
   .container {
     max-width: 1158px;
     padding: 0 15px;
-    margin: 0 auto;
-
   }
 }
-

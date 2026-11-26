@@ -20,8 +20,9 @@
   margin: 0 auto;
 }
 .team-item {
-  width: 100%;
-  max-width: 264px;
+  flex-shrink: 0;
+  width: 264px;
+  border-radius: 0 0 4px 4px;
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -66,9 +67,6 @@
     max-width: 552px;
     gap: 64px 24px;
   }
-  .team-item {
-    width: calc((100% - 24px) / 2);
-  }
 }
 /* Десктопні стилі */
 @media screen and (min-width: 1158px) {
@@ -78,11 +76,4 @@
   .team-list {
     max-width: 1128px;
   }
-  .team-item {
-    width: calc((100% - 72px) / 4);
-  }
 }
-
-/* Мобільні стилі */
-/* Планшетні стилі */
-/* Десктопні стилі */
